@@ -6,7 +6,7 @@ const router = createRouter({
   routes: [
       {
       path: '/',
-      redirect: '/chart',
+      redirect: '/ai',
     },
     {
       path: '/home',
@@ -25,6 +25,11 @@ const router = createRouter({
       path: '/chart',
       name: 'chart',
       component: () => import('../views/ChartView.vue'),
+    },
+    {
+      path: '/ai',
+      name: 'ai',
+      component: () => import('../views/AIView.vue'),
     },
   ],
 })

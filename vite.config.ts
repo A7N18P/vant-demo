@@ -41,6 +41,11 @@ export default defineConfig({
     host: true,
     proxy: {
       '^/api': 'http://localhost:3000/',
+      '^/visual': {
+        target: 'https://visual.volcengineapi.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/visual/, ''),
+      },
     },
   },
 })

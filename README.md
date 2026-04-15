@@ -43,3 +43,7 @@ yarn test:unit
 ```sh
 yarn lint
 ```
+
+
+[Http 开放平台](https://www.volcengine.com/docs/6444/1390583?lang=zh)
+[签名示例](https://www.volcengine.com/docs/6369/185600?lang=zh)
